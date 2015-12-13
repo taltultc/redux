@@ -3,9 +3,11 @@
 import { combineReducers } from "redux";
 import * as types from "../actions";
 
+
 const data = (state = {
   isFetching: false,
-  message: ""
+  message: "t",
+    currentPage: "DemoPage1"
 }, action) => {
   switch (action.type) {
   case types.REQUEST_DATA:

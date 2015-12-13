@@ -177,6 +177,7 @@ class NavigationBar extends React.Component {
     );
   }
   render() {
+
     if (this.props.statusBar === "lightContent") {
       StatusBarIOS.setStyle("light-content", false);
     } else if (this.props.statusBar === "default") {

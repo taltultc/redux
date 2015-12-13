@@ -4,6 +4,7 @@
 export const REQUEST_DATA = "REQUEST_DATA";
 export const RECEIVE_DATA = "RECEIVE_DATA";
 
+
 export const requestData = (): Object => {
   return {
     type: REQUEST_DATA
@@ -21,8 +22,8 @@ export const fetchData = (): Function => {
   return (dispatch) => {
     dispatch(requestData());
     return setTimeout(() => {
-      const data = {message: "Hello"};
+      const data = {message: "Hello Tal"};
       dispatch(receiveData(data));
-    }, 300);
+    }, 3000);
   };
 };
