@@ -28,7 +28,7 @@ const sock = {
   URL: 'echo.websocket.org',
   wsDipatcher: (msg) => {
     const { session } = store.getState();
-    alert(msg)
+    alert(msg);
     //return store.dispatch(ChatActions.receiveEvent(msg, session));
   },
   wsListener: () => {
